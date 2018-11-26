@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Karatavas game</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <table id="container" class="page-container" cellpadding="7" summary="">
+      <tbody>
+        <tr>
+          <td class="page-container-column">
+            <div class="body" style="width:100%">
+              <h1 class="box">Karatavas</h1>
+              <form method="get" action=".">
+                <table class="board">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img
+                          alt="Karatavu attels"
+                          src="https://www.speles.org/speles/bende/hang0.gif"/>
+                          
+                        
+                      </td>
+                      <td>
+                        <span class="hangman-text">Vards ir:</span>
+                        <input
+                          size="19"
+                          name="main"
+                          type="text"
+                          value=""
+                          readonly=""
+                        /><br /><br />
+                        <small class="giv-color">
+                          <input type="button" value=" A " onclick="cl('A')" />
+                          <input type="button" value=" B " onclick="cl('B')" />
+                          <input type="button" value=" C " onclick="cl('C')" />
+                          <input type="button" value=" D " onclick="cl('D')" />
+                          <input type="button" value=" E " onclick="cl('E')" />
+                          <input type="button" value=" F " onclick="cl('F')" />
+                          <input type="button" value=" G " onclick="cl('G')" />
+                          <input type="button" value=" H " onclick="cl('H')" />
+                          <input type="button" value=" I " onclick="cl('I')" />
+                          <input type="button" value=" J " onclick="cl('J')" />
+                          <input type="button" value=" K " onclick="cl('K')" />
+                          <input type="button" value=" L " onclick="cl('L')" />
+                          <input type="button" value=" M " onclick="cl('M')" />
+                          <input type="button" value=" N " onclick="cl('N')" />
+                          <input type="button" value=" O " onclick="cl('O')" />
+                          <input type="button" value=" P " onclick="cl('P')" />
+                          <input type="button" value=" Q " onclick="cl('Q')" />
+                          <input type="button" value=" R " onclick="cl('R')" />
+                          <input type="button" value=" S " onclick="cl('S')" />
+                          <input type="button" value=" T " onclick="cl('T')" />
+                          <input type="button" value=" U " onclick="cl('U')" />
+                          <input type="button" value=" V " onclick="cl('V')" />
+                          <input type="button" value=" W " onclick="cl('W')" />
+                          <input type="button" value=" X " onclick="cl('X')" />
+                          <input type="button" value=" Y " onclick="cl('Y')" />
+                          <input type="button" value=" Z " onclick="cl('Z')" />
+                          <br /><br />
+                          
+                        </small>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+              <script type="text/javascript"></script>
+            </div>
+            <div class="body">
+              <h1 class="box">Karatavu noteikumi</h1>
+              <p class="rules">
+                Speles merkis ir uzminet datora nejauši izveletu vardu,
+                izmeginot vairakus iespejamos varda burtus. Katra burta
+                atminešanas reize dators atver varda vietas, kur ir atminets
+                burts, vai ari nepareiza minejuma gadijuma papildina karatavas
+                ar kartejo detalu. Kad zimejums ir pabeigts, nepareizo minejumu
+                skaits ir sasniedzis maksimalo pielaujamo robežu un spele ir
+                beigusies. Lai veicas!
+              </p>
+            </div>
+          </td>
+        </tr>
+       
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="game.js"></script>
+  </body>
+</html>
